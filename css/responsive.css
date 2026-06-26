@@ -14,6 +14,20 @@
     .hero-metrics {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    footer .container {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .footer-left {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .footer-right {
+        min-height: auto;
+    }
 }
 
 @media (max-width: 760px) {
@@ -142,9 +156,25 @@
         padding: 0.85rem 0;
     }
 
-    footer .container {
-        flex-direction: column;
-        align-items: flex-start;
+    .footer-map {
+        width: 100%;
+    }
+
+    .footer-map iframe {
+        height: 350px;
+    }
+
+    .footer-right {
+        padding: 1.1rem;
+    }
+
+    .footer-meta-row {
+        grid-template-columns: 1fr;
+        gap: 0.2rem;
+    }
+
+    .footer-copy {
+        text-align: left;
     }
 
     .page-top {
